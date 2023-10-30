@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+    "-//Hibernate/Hibernate Configuration DTD//EN"
+    "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+  <session-factory>
+    <property name="connection.url">jdbc:postgresql://localhost:5432/examen</property>
+    <property name="connection.driver_class">org.postgresql.Driver</property>
+    <property name="connection.username">postgres</property>
+    <property name="connection.password">root</property>
+
+    <mapping class="Progra2.DTO.Asignaciones"/>
+    <mapping class="Progra2.DTO.Cursos"/>
+    <mapping class="Progra2.DTO.Estudiantes"/>
+    <mapping class="Progra2.DTO.Usuarios"/>
+
+
+  </session-factory>
+
+</hibernate-configuration>
